@@ -1,0 +1,17 @@
+server:
+  port: 8081
+spring:
+  mvc:
+    view:
+#      prefix: /jsp/
+#      suffix: .jsp  #跳到jsp
+      prefix: /templates/
+      suffix: .html  #跳到html
+    static-path-pattern: /static/**  #配置静态资源
+  devtools:
+    restart:
+      enabled: true  #设置开启热部署
+      additional-paths: src/main/java #重启目录
+      exclude: WEB-INF/**
+  freemarker:
+    cache: false    #页面不加载缓存，修改即时生效 --对jsp有用，html没有产生作用
