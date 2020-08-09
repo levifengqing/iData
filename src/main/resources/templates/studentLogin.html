@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>进入登录页面</title>
+    <link rel="stylesheet" href="/static/layui/css/layui.css" media="all">
+    <script type="text/javascript" src="/static/layui/layui.js"></script>
+    <script  src="/static/jquery-3.5.1/jquery-3.5.1.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<div>
+    welcome,,<p th:text="${user.bodyColor}">s</p>--<p th:text="${user.name}">s</p>---<p th:text="${user.sex}">s</p>----<p th:text="${user.age}">s</p>
+</div>
+<form class="layui-form" action="">
+    <div class="layui-form-item">
+        <label class="layui-form-label">姓名</label>
+        <div class="layui-input-block">
+            <input type="text" name="name" required  lay-verify="required" placeholder="请输入姓名" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">年龄</label>
+        <div class="layui-input-inline">
+            <input type="text" name="age" required lay-verify="required" placeholder="请输入年龄" autocomplete="off" class="layui-input">
+        </div>
+        <div class="layui-form-mid layui-word-aux">辅助文字</div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">选择框</label>
+        <div class="layui-input-block">
+            <select name="bodyColor" lay-verify="required">
+                <option value="">--请选择肤色--</option>
+                <option value="黄color">黄color</option>
+                <option value="黑color">黑color</option>
+                <option value="白color">白color</option>
+                <option value="绿color">绿color</option>
+                <option value="红color">红color</option>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">复选框</label>
+        <div class="layui-input-block">
+            <input type="checkbox" name="like[write]" title="写作">
+            <input type="checkbox" name="like[read]" title="阅读" checked>
+            <input type="checkbox" name="like[dai]" title="发呆">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">开关</label>
+        <div class="layui-input-block">
+            <input type="checkbox" name="switch" lay-skin="switch">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">单选框</label>
+        <div class="layui-input-block">
+            <input type="radio" name="sex" value="男" title="男">
+            <input type="radio" name="sex" value="女" title="女" checked>
+        </div>
+    </div>
+    <div class="layui-form-item layui-form-text">
+        <label class="layui-form-label">文本域</label>
+        <div class="layui-input-block">
+            <textarea name="desc" id="desc" placeholder="请输入内容" class="layui-textarea"></textarea>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+    </div>
+</form>
+</body>
+<script>
+    layui.use('form', function(){
+        var form = layui.form;
+        var flag = "";
+
+        //监听提交
+        form.on('submit(formDemo)', function(data){
+            layer.msg(JSON.stringify(data.field));
+
+            $.ajax({
+                url: 'http://localhost:8081/student/saveOne',
+                async: false, //修改为同步
+                data: data.field,
+                success: function (data) {
+                    // $("#desc").html("html");
+                    $("#desc").val("val");
+                    flag = true;
+
+                },
+                error(data){
+                    $("#desc").html(data);
+
+                }
+            });
+            return !flag;
+        });
+    });
+</script>
+</html>

@@ -21,7 +21,8 @@
 <div>
     <button class="layui-btn test" lay-data="{url: '/data/uploadPic'}">上传图片</button>
 </div>
-    <button class="layui-btn test1" lay-data="{url: '/data/uploadFile', accept: 'file'}">上传文件</button>
+    <button class="layui-btn test1" lay-data="{url: '/data/uploadFile', accept: 'file'}">上传文件</button><br/>
+    <button class="layui-btn test2" lay-data="{url: '/data/uploadFile_write', accept: 'file'}">上传文件并读写</button>
 </body>
 <script>
 
@@ -59,6 +60,13 @@
                 //获取当前触发上传的元素，一般用于 elem 绑定 class 的情况，注意：此乃 layui 2.1.0 新增
                 var item = this.item;
                 alert("222");
+            }
+        });
+        upload.render({
+            elem: '.test2'
+            ,done: function(res, index, upload){
+                //获取当前触发上传的元素，一般用于 elem 绑定 class 的情况，注意：此乃 layui 2.1.0 新增
+                alert(res.code);
             }
         });
     });

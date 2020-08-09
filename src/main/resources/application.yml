@@ -15,3 +15,10 @@ spring:
       exclude: WEB-INF/**
   freemarker:
     cache: false    #页面不加载缓存，修改即时生效 --对jsp有用，html没有产生作用
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///testdb?serverTimezone=UTC
+    username: root
+    password: root
+  thymeleaf:
+    cache: false  #关闭thymeleaf缓存
