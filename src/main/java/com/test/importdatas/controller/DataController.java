@@ -1,5 +1,6 @@
 package com.test.importdatas.controller;
 
+import com.microsoft.schemas.office.visio.x2012.main.CellType;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.stereotype.Controller;
@@ -134,10 +135,10 @@ public class DataController {
                     row.createCell(2);
                     row.createCell(3);
                     row.createCell(4);
-                    row.getCell(1).setCellType(CellType.STRING);
-                    row.getCell(2).setCellType(CellType.STRING);
-                    row.getCell(3).setCellType(CellType.STRING);
-                    row.getCell(4).setCellType(CellType.STRING);
+//                    row.getCell(1).setCellType(CellType.STRING);  //poi3.17
+//                    row.getCell(2).setCellType(CellType.STRING);  //poi3.17
+//                    row.getCell(3).setCellType(Cell.CELL_TYPE_STRING);  //poi3.14
+//                    row.getCell(4).setCellType(Cell.CELL_TYPE_STRING);  //poi3.14
                     String s1 = row.getCell(1).getStringCellValue();
                     String s2 = row.getCell(2).getStringCellValue();
                     String s3= row.getCell(3).getStringCellValue();

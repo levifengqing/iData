@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="10 seconds">
+    <property name="logData" value="./logDatas" />
+
+    <appender name="console.out" class="ch.qos.logback.core.ConsoleAppender">
+<!--        layout好像是自定义-->
+        <!--<layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>%-15(%d{HH:mm:ss.SSS}) [%thread] %-5level %logger{80}[%line] -%msg%n</pattern>
+        </layout>-->
+<!--        使用默认-->
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--PatternLayoutEncoder为encoder的默认实现-->
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度,%msg：日志消息，%n是换行符-->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="file.out" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${logData}/logDataDemo.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${logData}/logDataDemo-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <!--<encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+            //自定义打印格式,clss需要添加自定义的解析器
+            <layout class="com.test.importdatas.logback.MyPatternLayout">
+                <pattern>
+                    {
+                    "traceId":"%traceId",
+                    "@timestamp":"%date{yyyy-MM-dd'T'HH:mm:ss.SSSZZ}",
+                    "exception":"%exception",
+                    "message": "%message",
+                    &lt;!&ndash;%c打印类的全名,%line打印日志输出所在行&ndash;&gt;
+                    "method":"%c[%line]",
+                    "thread":"%t",
+                    "environment":"%environment",
+                    "level": "%level",
+                    "timeConsume":"%r"
+                    }
+                    &lt;!&ndash;%n为了换行&ndash;&gt;
+                    %n
+                </pattern>
+            </layout>
+        </encoder>-->
+        <encoder>
+<!--            简单格式,可以采用默认encoder-->
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符-->
+            <pattern>%-15(%d{yyyy-MM-dd HH:mm:ss.SSS}) [%thread] %-5level %logger{80}[%line] -%msg%n</pattern>
+        </encoder>
+        <!--日志文件最大的大小-->
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>10MB</MaxFileSize>
+        </triggeringPolicy>
+    </appender>
+
+<!--    日志打印级别 ALL > TRACE > FATAL > DEBUG > INFO > WARN > ERROR > OFF-->
+<!--    日志输出级别 TRACE > DEBUG > INFO > WARN > ERROR-->
+    <root level="info">
+        <appender-ref ref="console.out" />
+    </root>
+
+    <!--输出到指定日志文件，name属性，指定位要输出的包，不能随便写-->
+    <!--additivity是否向上级传递，false不传递，控制台不会有日志输入，子logger默认继承root"-->
+    <logger name="com.test.importdatas" level="info" additivity="true">
+        <appender-ref ref="file.out"/>
+    </logger>
+</configuration>
