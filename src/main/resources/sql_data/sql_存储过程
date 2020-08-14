@@ -1,0 +1,29 @@
+//通过存储过程，循环添加数据
+CREATE DEFINER=`root`@`localhost` PROCEDURE `addUser`(a int)
+BEGIN
+    DECLARE i INT DEFAULT 0;
+    DECLARE p CHAR(11);
+    while i<=a DO -- 循环开始
+				set p = 		concat('1',substring(cast(3 + (rand() * 10) % 7 AS char(50)), 1, 1),
+				right(left(trim(cast(rand() AS char(50))), 11), 9));
+        set i=i+1;
+				insert into user(name,sex,age,phone_no,address,hobby)
+				value(CONCAT('name',convert(i,CHAR(10))),if(i%2,'male','female'),i,p,
+							CONCAT('address',convert(i,CHAR(10))),CONCAT('hobby',convert(i,CHAR(10))));
+    end while; -- 循环结束
+END
+//通过存储过程，求和
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sum1`(a int)
+begin
+        DECLARE al INT DEFAULT 0;  -- default 是指定该变量的默认值
+        DECLARE i INT DEFAULT 1;
+    while i<=a DO -- 循环开始
+        set al=al+i;
+        set i=i+1;
+    end while; -- 循环结束
+    select al;  -- 输出结果
+    end
+
+//运行存储过程
+call sum1(10);求10累加
+call addUser(10);循环添加十条数据
