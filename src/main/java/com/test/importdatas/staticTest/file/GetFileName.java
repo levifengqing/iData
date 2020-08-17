@@ -1,4 +1,4 @@
-package com.test.importdatas.getFile;
+package com.test.importdatas.staticTest.file;
 
 
 import java.io.File;

@@ -22,3 +22,7 @@ spring:
     password: root
   thymeleaf:
     cache: false  #关闭thymeleaf缓存
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
