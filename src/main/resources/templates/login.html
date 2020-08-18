@@ -18,11 +18,17 @@
             </tr>
             <tr>
                 <td><input type="submit" value="登录"></td>
-                <td>取消</td>
+                <td><input type="button" value="注册" onclick="register()"></td>
             </tr>
         </table>
     </form>
 </div>
 
 </body>
+<script>
+    function register() {
+        location.href=("http://localhost:8081/register/login");//在本页面内跳转
+        // location.href=("/registerLogin.html");//没能跳转，不知道怎么改
+    }
+</script>
 </html>

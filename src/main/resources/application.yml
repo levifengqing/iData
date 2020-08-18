@@ -25,4 +25,9 @@ spring:
   redis:
     host: 127.0.0.1
     port: 6379
+  jpa:
+    show-sql: false  #是否显示sql语句
+    properties:
+      hibernate:
+        format_sql: true # 格式化sql
 
