@@ -3,11 +3,11 @@ server:
 spring:
   mvc:
     view:
-#      prefix: /jsp/
-#      suffix: .jsp  #跳到jsp
       prefix: /templates/
       suffix: .html  #跳到html
-    static-path-pattern: /static/**  #配置静态资源
+    static-path-pattern: /static/**  #配置静态资源 ，如果不手动配置，系统默认位置"classpath:/META-INF/resources/","classpath:/resources/", "classpath:/static/", "classpath:/public/"
+    format:
+      date: yyyy-MM-dd #系统的接收时间格式，如果不一样，则不可以接收。默认dd/MM/yyyy，可以改为自己的格式如yyyy-MM-dd
   devtools:
     restart:
       enabled: true  #设置开启热部署

@@ -3,10 +3,12 @@ package com.test.importdatas.pojo;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 /**
  * @Description  add@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -44,7 +46,8 @@ public class UserInfo  implements Serializable {
 	private Date gmtModified;
 
    	@Column(name = "version" )
-	@GeneratedValue(strategy = GenerationType.IDENTITY)//非主键，貌似没用
+//	@GeneratedValue(generator = "uuid2")
+//	@GenericGenerator(name = "uuid2",strategy = "uuid2")
 	private Integer version;
 
    	@Column(name = "rights" )//数据库设计，避免关键字，否则jpa操作会报错
@@ -58,5 +61,14 @@ public class UserInfo  implements Serializable {
 
    	@Column(name = "md5_password" )
 	private String md5Password;
+
+   	/*@OneToOne
+	@JoinColumn(name = "id",referencedColumnName = "pid")
+   	private UserDetail userDetail;*/
+
+
+	@OneToMany(targetEntity = UserDetail.class)
+	@JoinColumn(name = "id",referencedColumnName = "pid")
+   	private List<UserDetail> userDetail;
 
 }

@@ -1,46 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="82512d5e-bcf2-4760-ab86-2423f3685ed0" name="Default Changelist" comment="添加拦截器，md5加密,redis,cookie">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_5_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_51_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_51_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_51_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_51_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_51_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_51_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_3_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_10_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_3_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_2_8_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/importdatas/controller/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/importdatas/controller/RegisterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/importdatas/dao/UserInfoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/importdatas/pojo/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/importdatas/service/UserInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/importdatas/staticTest/jodaTime/JodaTime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/importdatas/util/Md5Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/item1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/item2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/item3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/registerLogin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/register_error.html" afterDir="false" />
+    <list default="true" id="82512d5e-bcf2-4760-ab86-2423f3685ed0" name="Default Changelist" comment="添加joda-time,interceptor+cookie+md5+redis+layui-table">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/test/importdatas/pojo/UserDetail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/importdatas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/importdatas.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logDatas/logDataDemo.log" beforeDir="false" afterPath="$PROJECT_DIR$/logDatas/logDataDemo.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/importdatas/config/LoginConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/importdatas/config/LoginConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/importdatas/controller/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/importdatas/controller/Hello.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/importdatas/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/importdatas/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/importdatas/interceptor/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/importdatas/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/test/importdatas/pojo/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/test/importdatas/pojo/UserInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/welcome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/item3.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/item3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/test/importdatas/ImportdatasApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/importdatas/ImportdatasApplicationTests.java" afterDir="false" />
     </list>
     <list id="75fdb612-9691-4d95-ad4c-935774707929" name="ignore" comment="忽略">
@@ -162,6 +128,7 @@
       <change afterPath="$PROJECT_DIR$/target/classes/static/layui/layui.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/templates/iData.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/test-classes/com/test/importdatas/ImportdatasApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logDatas/logDataDemo.log" beforeDir="false" afterPath="$PROJECT_DIR$/logDatas/logDataDemo.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -268,11 +235,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/test/importdatas/pojo" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="DestinationChooserDialog.Package.RECENTS_KEY">
@@ -295,7 +262,7 @@
       <recent name="E:\workspaces\importdatas\src\main\resources\static\jquery-3.5.1" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ImportdatasApplication">
+  <component name="RunManager" selected="JUnit.ImportdatasApplicationTests.testOneToOne">
     <configuration name="Encryption" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.test.importdatas.staticTest.encryption.Encryption" />
       <module name="importdatas" />
@@ -351,6 +318,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ImportdatasApplicationTests.testOneToOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="importdatas" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.importdatas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.test.importdatas" />
+      <option name="MAIN_CLASS_NAME" value="com.test.importdatas.ImportdatasApplicationTests" />
+      <option name="METHOD_NAME" value="testOneToOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Resin 3.1.7a" type="ResinConfigurationType" factoryName="Local" APPLICATION_SERVER_NAME="Resin 3.1.7a" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="PORT" value="80" />
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
@@ -376,13 +359,15 @@
     <list>
       <item itemvalue="Application.GetFileName" />
       <item itemvalue="Application.Encryption" />
+      <item itemvalue="Application.JodaTime" />
+      <item itemvalue="JUnit.ImportdatasApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.ImportdatasApplicationTests.testOneToOne" />
       <item itemvalue="Resin.Resin 3.1.7a" />
       <item itemvalue="Spring Boot.ImportdatasApplication" />
-      <item itemvalue="JUnit.ImportdatasApplicationTests.contextLoads" />
-      <item itemvalue="Application.JodaTime" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ImportdatasApplicationTests.testOneToOne" />
         <item itemvalue="Application.JodaTime" />
         <item itemvalue="JUnit.ImportdatasApplicationTests.contextLoads" />
         <item itemvalue="Application.Encryption" />
@@ -428,7 +413,10 @@
       <workItem from="1597393402014" duration="1277000" />
       <workItem from="1597397329279" duration="1980000" />
       <workItem from="1597642976051" duration="13128000" />
-      <workItem from="1597710661879" duration="22728000" />
+      <workItem from="1597710661879" duration="28904000" />
+      <workItem from="1597800051682" duration="16000" />
+      <workItem from="1597908902446" duration="5349000" />
+      <workItem from="1597969829805" duration="7609000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1596704215613</created>
@@ -479,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597656029331</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="添加joda-time,interceptor+cookie+md5+redis+layui-table">
+      <created>1597739042277</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1597739042277</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -507,7 +502,8 @@
     <MESSAGE value="添加poi sxxf，log日志" />
     <MESSAGE value="添加sql存储过程相关语句。" />
     <MESSAGE value="添加拦截器，md5加密,redis,cookie" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加拦截器，md5加密,redis,cookie" />
+    <MESSAGE value="添加joda-time,interceptor+cookie+md5+redis+layui-table" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加joda-time,interceptor+cookie+md5+redis+layui-table" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597733077742">
@@ -534,18 +530,20 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1596955868031" />
-    <state x="322" y="8" width="1064" height="804" key="CommitChangelistDialog2" timestamp="1597656123499">
+    <state x="322" y="8" width="1064" height="804" key="CommitChangelistDialog2" timestamp="1597908965882">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="322" y="8" width="1064" height="804" key="CommitChangelistDialog2/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597656123499" />
-    <state x="259" y="71" key="DiffContextDialog" timestamp="1597656121665">
+    <state x="322" y="8" key="CommitChangelistDialog2/1920.0.1152.680/0.0.1536.824@0.0.1536.824" timestamp="1597908965882" />
+    <state x="322" y="8" width="1064" height="804" key="CommitChangelistDialog2/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597740669657" />
+    <state x="259" y="71" key="DiffContextDialog" timestamp="1597908964897">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="259" y="71" key="DiffContextDialog/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597656121665" />
-    <state x="548" y="171" key="FileChooserDialogImpl" timestamp="1597712772671">
+    <state x="259" y="71" key="DiffContextDialog/1920.0.1152.680/0.0.1536.824@0.0.1536.824" timestamp="1597908964897" />
+    <state x="259" y="71" key="DiffContextDialog/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597738875852" />
+    <state x="548" y="171" key="FileChooserDialogImpl" timestamp="1597741160392">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="548" y="171" key="FileChooserDialogImpl/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597712772671" />
+    <state x="548" y="171" key="FileChooserDialogImpl/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597741160392" />
     <state x="614" y="322" key="Gitee.ShareDialog" timestamp="1596707218088">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -562,54 +560,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="423" y="120" key="Github.UntrackedFilesDialog/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1596703831107" />
-    <state width="1493" height="279" key="GridCell.Tab.0.bottom" timestamp="1597738795967">
+    <state width="1493" height="443" key="GridCell.Tab.0.bottom" timestamp="1597745208132">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.0.bottom/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597738795967" />
-    <state width="1493" height="279" key="GridCell.Tab.0.center" timestamp="1597738795967">
+    <state width="1493" height="443" key="GridCell.Tab.0.bottom/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597745208132" />
+    <state width="1493" height="443" key="GridCell.Tab.0.center" timestamp="1597745208132">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.0.center/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597738795967" />
-    <state width="1493" height="279" key="GridCell.Tab.0.left" timestamp="1597738795967">
+    <state width="1493" height="443" key="GridCell.Tab.0.center/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597745208132" />
+    <state width="1493" height="443" key="GridCell.Tab.0.left" timestamp="1597745208132">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.0.left/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597738795967" />
-    <state width="1493" height="279" key="GridCell.Tab.0.right" timestamp="1597738795967">
+    <state width="1493" height="443" key="GridCell.Tab.0.left/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597745208132" />
+    <state width="1493" height="443" key="GridCell.Tab.0.right" timestamp="1597745208132">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.0.right/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597738795967" />
-    <state width="1493" height="279" key="GridCell.Tab.1.bottom" timestamp="1597738795968">
+    <state width="1493" height="443" key="GridCell.Tab.0.right/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597745208132" />
+    <state width="1493" height="443" key="GridCell.Tab.1.bottom" timestamp="1597745208132">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.1.bottom/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597738795968" />
-    <state width="1493" height="279" key="GridCell.Tab.1.center" timestamp="1597738795967">
+    <state width="1493" height="443" key="GridCell.Tab.1.bottom/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597745208132" />
+    <state width="1493" height="443" key="GridCell.Tab.1.center" timestamp="1597745208132">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.1.center/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597738795967" />
-    <state width="1493" height="279" key="GridCell.Tab.1.left" timestamp="1597738795967">
+    <state width="1493" height="443" key="GridCell.Tab.1.center/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597745208132" />
+    <state width="1493" height="443" key="GridCell.Tab.1.left" timestamp="1597745208132">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.1.left/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597738795967" />
-    <state width="1493" height="279" key="GridCell.Tab.1.right" timestamp="1597738795967">
+    <state width="1493" height="443" key="GridCell.Tab.1.left/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597745208132" />
+    <state width="1493" height="443" key="GridCell.Tab.1.right" timestamp="1597745208132">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="279" key="GridCell.Tab.1.right/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597738795967" />
-    <state width="1493" height="334" key="GridCell.Tab.2.bottom" timestamp="1597732277113">
+    <state width="1493" height="443" key="GridCell.Tab.1.right/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597745208132" />
+    <state width="1493" height="334" key="GridCell.Tab.2.bottom" timestamp="1597745208130">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="334" key="GridCell.Tab.2.bottom/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597732277113" />
-    <state width="1493" height="334" key="GridCell.Tab.2.center" timestamp="1597732277113">
+    <state width="1493" height="334" key="GridCell.Tab.2.bottom/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597745208130" />
+    <state width="1493" height="334" key="GridCell.Tab.2.center" timestamp="1597745208130">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="334" key="GridCell.Tab.2.center/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597732277113" />
-    <state width="1493" height="334" key="GridCell.Tab.2.left" timestamp="1597732277113">
+    <state width="1493" height="334" key="GridCell.Tab.2.center/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597745208130" />
+    <state width="1493" height="334" key="GridCell.Tab.2.left" timestamp="1597745208129">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="334" key="GridCell.Tab.2.left/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597732277113" />
-    <state width="1493" height="334" key="GridCell.Tab.2.right" timestamp="1597732277113">
+    <state width="1493" height="334" key="GridCell.Tab.2.left/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597745208129" />
+    <state width="1493" height="334" key="GridCell.Tab.2.right" timestamp="1597745208130">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="334" key="GridCell.Tab.2.right/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597732277113" />
+    <state width="1493" height="334" key="GridCell.Tab.2.right/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597745208130" />
     <state width="212" height="477" key="HiddenNamespacesPopup" timestamp="1596943164875">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -618,22 +616,23 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="349" y="78" key="Registry/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1596682676166" />
-    <state x="272" y="0" key="SettingsEditor" timestamp="1597376883874">
+    <state x="272" y="0" key="SettingsEditor" timestamp="1597991327872">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="272" y="0" key="SettingsEditor/1920.0.1152.680/0.0.1536.824@0.0.1536.824" timestamp="1597991327872" />
     <state x="272" y="0" key="SettingsEditor/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597376883874" />
-    <state x="614" y="333" key="VCS.ChangelistChooser" timestamp="1597644415988">
+    <state x="614" y="333" key="VCS.ChangelistChooser" timestamp="1597738944752">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="614" y="333" key="VCS.ChangelistChooser/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597644415988" />
+    <state x="614" y="333" key="VCS.ChangelistChooser/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597738944752" />
     <state x="599" y="285" key="VCS.EditChangelistDialog" timestamp="1596703011218">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="599" y="285" key="VCS.EditChangelistDialog/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1596703011218" />
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1597656052793">
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1597739061413">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597656052793" />
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597739061413" />
     <state x="565" y="193" key="chooseDestDirectoryDialog" timestamp="1597399256730">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -646,13 +645,15 @@
       <screen x="1920" y="0" width="1536" height="824" />
     </state>
     <state x="1939" y="0" width="1083" height="809" maximized="true" key="dock-window-1/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597387048776" />
-    <state x="457" y="167" width="621" height="490" key="find.popup" timestamp="1597375455257">
+    <state x="457" y="167" width="621" height="490" key="find.popup" timestamp="1597910664113">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="457" y="167" width="621" height="490" key="find.popup/1920.0.1152.680/0.0.1536.824@0.0.1536.824" timestamp="1597910664113" />
     <state x="457" y="167" width="621" height="490" key="find.popup/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597375455257" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1597735429135">
+    <state x="735" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1597910661579">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="735" y="203" width="672" height="678" key="search.everywhere.popup/1920.0.1152.680/0.0.1536.824@0.0.1536.824" timestamp="1597910661579" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1597735429135" />
   </component>
   <component name="XDebuggerManager">

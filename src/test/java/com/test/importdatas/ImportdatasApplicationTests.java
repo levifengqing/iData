@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Date;
+import java.util.List;
 
 @SpringBootTest
 class ImportdatasApplicationTests {
@@ -28,6 +29,11 @@ class ImportdatasApplicationTests {
         userInfo.setRight("right");
         userInfo.setRole("role");
         userInfoDao.save(userInfo);
+    }
+    @Test
+    public void testOneToOne(){
+        List<UserInfo> all = userInfoDao.findAll();
+        all.forEach(System.out::println);
     }
 
 }
