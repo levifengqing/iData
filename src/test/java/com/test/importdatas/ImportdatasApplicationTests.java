@@ -9,6 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 @SpringBootTest
 class ImportdatasApplicationTests {
@@ -33,6 +34,11 @@ class ImportdatasApplicationTests {
     @Test
     public void testOneToOne(){
         List<UserInfo> all = userInfoDao.findAll();
+        all.forEach(System.out::println);
+    }
+    @Test
+    public void testGetLists(){
+        List<Map> all = userInfoDao.getLists();
         all.forEach(System.out::println);
     }
 

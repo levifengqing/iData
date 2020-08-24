@@ -62,13 +62,16 @@ public class UserInfo  implements Serializable {
    	@Column(name = "md5_password" )
 	private String md5Password;
 
-   	/*@OneToOne
+   	@OneToOne
 	@JoinColumn(name = "id",referencedColumnName = "pid")
-   	private UserDetail userDetail;*/
+   	private UserDetail userDetail;
+   	//已经可以正常查询出结果
+   	//一对一，另一方好像啥的不用加了，就可以查出来了
+
+	//测试失败
+//	@OneToMany(mappedBy = "userInfo1",cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+//	private List<UserHome> userHomes;
 
 
-	@OneToMany(targetEntity = UserDetail.class)
-	@JoinColumn(name = "id",referencedColumnName = "pid")
-   	private List<UserDetail> userDetail;
 
 }

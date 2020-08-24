@@ -55,4 +55,14 @@ public class MainController {
         map.put("data",all);
         return map;
     }
+    @GetMapping("/item3/getDatas")
+    public Map item3GetDatas(){
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("code",0);
+        map.put("msg","");
+        map.put("count",168);
+        List<Map> all = userInfoDao.getLists();
+        map.put("data",all);
+        return map;
+    }
 }
